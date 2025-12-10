@@ -1,7 +1,8 @@
 node{
+
     
     
-stage('clone java project ') {
+stage('clone mahaloginjava project ') {
  git 'https://github.com/maha4dsvc/mahalogin.git'
 }
 
