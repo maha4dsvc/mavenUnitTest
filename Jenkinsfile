@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                echo 'Hi'
+                echo 'Hello'
+                echo 'World'
             }
         }
         stage('clone java project') {
