@@ -7,6 +7,7 @@ pipeline {
                 echo 'Hi'
                 echo 'Hello'
                 echo 'World'
+                echo 'this is maha'
             }
         }
         stage('clone java project') {
