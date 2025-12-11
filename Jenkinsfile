@@ -1,13 +1,22 @@
-node{
+pipeline {
+    agent any
 
-    
-    
-stage('clone mahaloginjava project ') {
- git 'https://github.com/maha4dsvc/mahalogin.git'
-}
-
-stage('mvn target install') {
- sh 'mvn install'
-}
-    
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('clone java project') {
+            steps {
+               git 'https://github.com/maha4dsvc/mahalogin.git'
+            }
+        }
+        
+         stage('execute maven target') {
+            steps {
+             sh 'mvn clean install'
+            }
+        }
+    }
 }
