@@ -5,9 +5,10 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
+                echo 'this is maha'
             }
         }
-        stage('clone java project') {
+        stage('clone MAHA LOGIN java project') {
             steps {
                 git 'https://github.com/maha4dsvc/mahalogin.git'
             }
